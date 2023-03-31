@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Photo Gallery App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+  
+    <div class="index">
+        
+        <figure class="text-center bbground">
+            <blockquote class="blockquote">
+              <h1>PHOTO GALLERY</h1>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                When you photograph people in color, you photograph their clothes.
+                <br> But when you photograph people in Black and white, you photograph their souls!" 
+            </figcaption>
+          </figure>
+        <nav class="navbar bg-body-tertiary bg-primary mt-0" data-bs-theme="light">
+            <div class="container  d-flex justify-content-center">
+                <!-- title of photo gallery app -->
+                <div>
+                <h1 class="navbar-brand">Write your Image</h1>
+                </div>
+
+                <div class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-bar">
+                    <button class="btn btn-outline-success" onclick={SearchPhotos()}  type="submit">Search</button>
+                </div>
+            </div>
+        </nav>
+        <!-- container div starts here -->
+        <div class="container ">
+            <div class="row row-cols-5"  id="container">
+        
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <script src="lightbox112.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
